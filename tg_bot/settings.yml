@@ -1,0 +1,46 @@
+db:
+#  host: localhost
+#  port: 27017
+#  name: askona_db
+telegram:
+#  token: '5932806173:AAERv5CFHQpSTBJ3hbwKI9RzwkzPrUhoKEA'
+#  askona_help_chat_id: -821065265
+webhook:
+  host: 'https://274a-95-161-189-34.eu.ngrok.io'
+  path: '/tg_bot'
+webapp:
+  #  host: 0.0.0.0
+  host: 'localhost'
+  port: 5000
+options:
+  admins: Any007 #, TBikmullin
+askona_api:
+  #  host: 'https://0107-95-161-189-35.eu.ngrok.io'
+  host: 0.0.0.0
+  port: 3000
+
+json_patterns:
+  childrens: 'Дата рождения '
+  need_files: [ 'Первая страница паспорта',
+                'Страницы паспорта с детьми',
+                'Свидетельство о рождении всех рожденных детей',
+                'Документ подтверждающий беременность' ]
+  gestation: 'Я беременна'
+  yes_gestation: 'Да'
+  need_vcv: 'VCV'
+  new_event_pattern: 'create'
+predict_answer:
+  SD: "Краткий ответ для SD"
+  SP: "Краткий ответ для SP"
+  EM: "Краткий ответ для EM"
+  SM: "Краткий ответ для SM"
+client_patterns:
+  need_support_help: 'Пожалуйста, расскажите мне о возникшей ошибке указав информацию о вашем устройстве (модель, версию операционной системы и прошивку), версию приложения и модель товара. Так мы сможем всё проверить и исправить вашу ошибку максимально оперативно.'
+  connecting_to_support: 'К вам подключился наш сотрудник. Приятного общения!'
+  support_end_communication: 'Сап завершил общение'
+  client_end_communication: 'Вы завершили общение'
+support_patterns:
+  connecting_to_client: 'Вы подключились к чату с клиентом./nВсе следующие сообщения будут переадресованы ему./nУдачного общения!'
+  end_communication: 'заявка закрыта'
+  support_end_communication: 'Вы завершили общение'
+  client_end_communication: 'Клиент завершил общение'

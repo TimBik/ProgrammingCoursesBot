@@ -1,0 +1,50 @@
+Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\KeyboardsMap.py", line 19, in needing_help
+    await bot.send_message(message.chat.id,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\KeyboardsMap.py", line 19, in needing_help
+    await bot.send_message(message.chat.id,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\KeyboardsMap.py", line 19, in needing_help
+    await bot.send_message(message.chat.id,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+'coroutine' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\KeyboardsMap.py", line 67, in needing_help
+    problem_type = state.get_data().get('problem_type', '...')
+AttributeError: 'coroutine' object has no attribute 'get'

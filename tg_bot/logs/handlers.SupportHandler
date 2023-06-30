@@ -1,0 +1,203 @@
+Chat not found
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 24, in finish_find_support
+    await bot.send_message(callback_query.id,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+Chat not found
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 24, in finish_find_support
+    await bot.send_message(callback_query.id,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 26, in finish_find_support
+    await state.update_data(client=UserService.get_user_by_user_tg_id(client_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 18, in get_user_by_user_tg_id
+    return User(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 26, in finish_find_support
+    await state.update_data(client=UserService.get_user_by_user_tg_id(client_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 18, in get_user_by_user_tg_id
+    return User(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'client'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 58, in finish_find_support
+    client = (await state.get_data())['client']
+KeyError: 'client'
+'client'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 58, in finish_find_support
+    client = (await state.get_data())['client']
+KeyError: 'client'
+'client'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 58, in finish_find_support
+    client = (await state.get_data())['client']
+KeyError: 'client'
+'client'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 66, in finish_find_support
+    client = (await state.get_data())['client']
+KeyError: 'client'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 64, in finish_find_support
+    client = UserService.get_user_by_user_tg_id(support.client_processing_tg_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 18, in get_user_by_user_tg_id
+    return User(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+set_state() takes from 1 to 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 33, in finish_find_support
+    SupportChatService.add_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 25, in add_client_process
+    chat_state.set_state(client_id, 'any')
+TypeError: set_state() takes from 1 to 2 positional arguments but 3 were given
+set_state() takes from 1 to 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 33, in finish_find_support
+    SupportChatService.add_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 25, in add_client_process
+    chat_state.set_state(client_id, 'any')
+TypeError: set_state() takes from 1 to 2 positional arguments but 3 were given
+set_state() takes from 1 to 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 38, in finish_find_support
+    ClientChatService.add_support_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 45, in add_support_process
+    chat_state.set_state(support_id, '')
+TypeError: set_state() takes from 1 to 2 positional arguments but 3 were given
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 60, in finish_find_support
+    await SupportChatService.reset_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 39, in reset_client_process
+    support = SupportService.get_support_by_user_tg_id(support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 65, in get_support_by_user_tg_id
+    return Support(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 34, in __init__
+    super().__init__(user)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 60, in finish_find_support
+    await SupportChatService.reset_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 39, in reset_client_process
+    support = SupportService.get_support_by_user_tg_id(support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 65, in get_support_by_user_tg_id
+    return Support(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 34, in __init__
+    super().__init__(user)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 60, in finish_find_support
+    await SupportChatService.reset_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 39, in reset_client_process
+    support = SupportService.get_support_by_user_tg_id(support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 65, in get_support_by_user_tg_id
+    return Support(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 34, in __init__
+    super().__init__(user)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 60, in finish_find_support
+    await SupportChatService.reset_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 39, in reset_client_process
+    support = SupportService.get_support_by_user_tg_id(support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 65, in get_support_by_user_tg_id
+    return Support(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 34, in __init__
+    super().__init__(user)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 60, in finish_find_support
+    await SupportChatService.reset_client_process(support_id, client_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 39, in reset_client_process
+    support = SupportService.get_support_by_user_tg_id(support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 65, in get_support_by_user_tg_id
+    return Support(UserRepository.get_user_by_user_tg_id(user_tg_id))
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 34, in __init__
+    super().__init__(user)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\models\User.py", line 4, in __init__
+    self.id = user.get('_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+'support_end_communication'
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 62, in finish_find_support
+    config.SUPPORT_PATTERNS['support_end_communication'],
+KeyError: 'support_end_communication'
+cannot encode object: <tg_bot.models.User.Support object at 0x000002CBD4E1ED90>, of type: <class 'tg_bot.models.User.Support'>
+Traceback (most recent call last):
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\handlers\SupportHandler.py", line 65, in finish_find_support
+    await ClientChatService.reset_support_process(client_id=client_id, support_id=support_id)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\ChatService.py", line 63, in reset_support_process
+    SupportService.update_support_by_tg_user_id(client, client)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\services\UserService.py", line 69, in update_support_by_tg_user_id
+    UserRepository.update_user_by_tg_user_id(tg_user_id, support)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\tg_bot\repository\UserRepository.py", line 10, in update_user_by_tg_user_id
+    return bd.users.replace_one({'tg_user_id': tg_user_id}, user.get_dict_nid())
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\collection.py", line 928, in replace_one
+    self._update_retryable(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\collection.py", line 836, in _update_retryable
+    return self.__database.client._retryable_write(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\collection.py", line 817, in _update
+    return self._update(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\collection.py", line 773, in _update
+    result = sock_info.command(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\pool.py", line 795, in command
+    self._raise_connection_failure(error)
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\pool.py", line 767, in command
+    return command(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "C:\Users\timur\PycharmProjects\AskonaBot\venv\lib\site-packages\pymongo\message.py", line 692, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: <tg_bot.models.User.Support object at 0x000002CBD4E1ED90>, of type: <class 'tg_bot.models.User.Support'>
